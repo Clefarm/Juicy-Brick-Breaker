@@ -13,7 +13,7 @@ var levels = [
 		"sound_start":"",
 		"multiplier":1.0,
 		"timer":120,
-		"layout_start":Vector2(125,105),
+		"layout_start":Vector2(110,105),
 		"layout_spacing":Vector2(100,40),
 		"bricks":{
 			100:"res://Brick/Brick.tscn",

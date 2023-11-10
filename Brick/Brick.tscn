@@ -1,12 +1,36 @@
-[gd_scene load_steps=3 format=3 uid="uid://bjvdmnbj44w6x"]
+[gd_scene load_steps=6 format=3 uid="uid://bjvdmnbj44w6x"]
 
-[ext_resource type="Script" path="res://Brick/Brick.gd" id="1"]
+[ext_resource type="Script" path="res://Brick.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://f4qybvne86fx" path="res://Assets/Orange_Bubble.png" id="2_fiqrh"]
+
+[sub_resource type="Curve" id="Curve_0etgx"]
+_data = [Vector2(0, 0.5), 0.0, 0.0, 0, 0, Vector2(0.502756, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="Gradient" id="Gradient_wsk1v"]
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
 
 [sub_resource type="RectangleShape2D" id="1"]
 size = Vector2(90, 30)
 
 [node name="Brick" type="StaticBody2D"]
 script = ExtResource("1")
+
+[node name="Confetti" type="CPUParticles2D" parent="."]
+emitting = false
+amount = 15
+lifetime = 0.7
+one_shot = true
+explosiveness = 0.7
+randomness = 1.0
+texture = ExtResource("2_fiqrh")
+emission_shape = 2
+emission_sphere_radius = 1.0
+direction = Vector2(50, 2.08165e-12)
+spread = 180.0
+gravity = Vector2(2.08165e-12, 2.08165e-12)
+scale_amount_curve = SubResource("Curve_0etgx")
+color_ramp = SubResource("Gradient_wsk1v")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_left = -45.0
