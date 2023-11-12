@@ -14,8 +14,8 @@
 [ext_resource type="Script" path="res://Effects/Fever.gd" id="9"]
 [ext_resource type="Script" path="res://Camera2D.gd" id="11_r8b6t"]
 [ext_resource type="AudioStream" uid="uid://dmjmxwn83khpr" path="res://Assets/Paddle.wav" id="13_j7ix6"]
-[ext_resource type="AudioStream" uid="uid://cylpy4wfkw15n" path="res://Assets/Music.mp3" id="13_qand1"]
 [ext_resource type="AudioStream" uid="uid://b6ib3uemwcsni" path="res://Assets/NewWall.wav" id="14_jm6sn"]
+[ext_resource type="AudioStream" uid="uid://bjxun4247pe36" path="res://Assets/Game_Music.mp3" id="14_xmkc5"]
 [ext_resource type="AudioStream" uid="uid://df3j4urvg31xs" path="res://Assets/Brick.wav" id="15_8be8i"]
 [ext_resource type="AudioStream" uid="uid://dtw6b7637br7p" path="res://Assets/Die.wav" id="15_q8p6r"]
 
@@ -123,8 +123,8 @@ enabled = false
 script = ExtResource("11_r8b6t")
 
 [node name="Music" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("13_qand1")
-volume_db = 12.0
+stream = ExtResource("14_xmkc5")
+volume_db = 8.252
 autoplay = true
 
 [node name="Paddle_Audio" type="AudioStreamPlayer" parent="."]
