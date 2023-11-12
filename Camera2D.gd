@@ -24,7 +24,7 @@ func _process(delta):
 		shake()
 	
 func shake():
-	var amount = pow(min(trauma,1.0), trauma_power)
+	var amount = pow(min(trauma,2.0), trauma_power)
 	noise_y += 1
 	rotation = max_roll * amount * noise.get_noise_2d(1, noise_y)
 	offset.x = max_offset.x * amount * noise.get_noise_2d(2, noise_y)

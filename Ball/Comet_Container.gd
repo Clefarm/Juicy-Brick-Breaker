@@ -7,6 +7,6 @@ func _physics_process(_delta):
 		if c.modulate.a <= 0 or c.modulate.v <= 0:
 			c.queue_free()
 		c.scale *= 0.99
-		c.modulate.a -= 0.03
+		c.modulate.a -= 0.01
 		c.modulate.v -= 0.01
 		c.modulate.h += 0.02

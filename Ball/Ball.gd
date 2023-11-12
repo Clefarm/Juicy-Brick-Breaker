@@ -1,6 +1,6 @@
 extends RigidBody2D
 
-var min_speed = 100.0
+var min_speed = 200.0
 var max_speed = 600.0
 var accelerate = false
 var time_highlight = 0.4
@@ -90,7 +90,7 @@ func distort():
 	$Images.scale = direction
 
 func comet():
-	h_rotate = wrapf(h_rotate+0.01, 0, 1)
+	h_rotate = wrapf(h_rotate+1, 0.6, 0.1)
 	var comet_container = get_node_or_null("/root/Game/Comet_Container")
 	if comet_container != null:
 		var sprite = $Images/Ball.duplicate()

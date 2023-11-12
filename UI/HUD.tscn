@@ -18,6 +18,8 @@ anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_top = -29.0
+grow_horizontal = 2
+grow_vertical = 0
 color = Color(0, 0, 0, 0.25098)
 
 [node name="Background2" type="ColorRect" parent="."]
@@ -26,6 +28,7 @@ anchors_preset = 10
 anchor_right = 1.0
 offset_top = 10.0
 offset_bottom = 50.0
+grow_horizontal = 2
 color = Color(0, 0, 0, 0.25098)
 
 [node name="Score" type="Label" parent="."]

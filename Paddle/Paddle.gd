@@ -14,7 +14,7 @@ func _ready():
 	target = Vector2(Global.VP.x / 2, Global.VP.y - 80)
 
 func _physics_process(_delta):
-	target.x = clamp(target.x, 0, Global.VP.x - 2*width)
+	target.x = clamp(target.x, 1, Global.VP.x - 2*width)
 	position = target
 	var ball_container = get_node_or_null("/root/Game/Ball_Container")
 	if ball_container != null and ball_container.get_child_count() > 0:
